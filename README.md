@@ -1,1 +1,0 @@
-# glossmart-fullstackproject
