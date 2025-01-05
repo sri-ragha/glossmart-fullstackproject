@@ -1,0 +1,177 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+/* Main Container */
+.list {
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table Container */
+.list-table {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.list-table-format.title {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+/* Image Styling */
+.list-table-format img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Text Styling */
+.list-table-format p {
+  margin: 0;
+  text-align: center;
+  color: #555;
+}
+
+.list-table-format b {
+  text-align: center;
+}
+
+/* Action Button */
+.list-table-format button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list-table-format button:hover {
+  background-color: #0056b3;
+}
+
+.list-table-format .remove-btn {
+  background-color: #dc3545;
+}
+
+.list-table-format .remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* Modal container */
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.edit-modal-content {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.edit-modal-content h3 {
+  margin: 0 0 15px;
+  text-align: center;
+  color: #333;
+}
+
+.edit-modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-modal-content label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.edit-modal-content input,
+.edit-modal-content select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.custom-edit-modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-save-button,
+.custom-cancel-button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-save-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.custom-save-button:hover {
+  background-color: #218838;
+}
+
+.custom-cancel-button {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.custom-cancel-button:hover {
+  background-color: #e0a800;
+}

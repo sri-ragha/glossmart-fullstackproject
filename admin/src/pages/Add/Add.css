@@ -1,0 +1,115 @@
+/* Add.css */
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f9fc; /* Light background for better readability */
+    min-height: 100vh; /* Full-page height */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between elements */
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-img-upload {
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-img-upload img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px dashed #1abc9c; /* Dashed border for upload area */
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .add-img-upload img:hover {
+    transform: scale(1.1);
+    background-color: rgba(26, 188, 156, 0.1); /* Subtle hover effect */
+  }
+  
+  .add-product-name input,
+  .add-product-description textarea,
+  .add-category select,
+  .add-price input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .add-product-name input:focus,
+  .add-product-description textarea:focus,
+  .add-category select:focus,
+  .add-price input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+    outline: none;
+  }
+  
+  .add-category-price {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  .add-category,
+  .add-price {
+    flex: 1; /* Ensures equal width for both sections */
+    min-width: 200px;
+  }
+  
+  .add-btn {
+    padding: 12px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05); /* Subtle hover scaling */
+  }
+  
+  .add-btn:active {
+    transform: scale(0.98); /* Slight compression on click */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      padding: 20px;
+    }
+  
+    .add-category-price {
+      flex-direction: column; /* Stacks fields vertically */
+    }
+  }
+  
